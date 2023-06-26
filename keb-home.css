@@ -1,0 +1,705 @@
+/* 230616 수정본 */
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    letter-spacing: 0;
+    width: 100%;
+    height: 100%;
+    font-family: '돋움', '굴림', sans-serif, 'NotoSans_Regular';
+    font-size: 12px;
+    line-height: 18px;
+    background: none;
+    color: #666;
+    min-width: 1210px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+div {
+    height: auto;
+    letter-spacing: 0;
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+
+/* 전체 wrapper */
+#HANA-WRAP-DIV {
+    position: relative;
+    width: auto;
+    min-width: 0;
+    min-height: 0;
+    padding-right: 0;
+    /* 가운데로 정렬 */
+    overflow: visible;
+}
+
+#wrap {
+    overflow: visible;
+    width: auto;
+    min-width: 0;
+    /* 이렇게 해야 스크롤이 안 생김*/
+    min-height: 0;
+    padding-right: 0;
+    background: none;
+}
+
+/* header */
+#header {
+    width: 100%;
+    border-top: none;
+    /* float: none; */
+    position: relative;
+    box-sizing: border-box;
+}
+
+#header * {
+    box-sizing: border-box;
+}
+
+.hd-inner {
+    position: relative;
+    width: 1280px;
+    padding: 0 65px;
+    margin: 0 auto;
+    /* 위아래는 고정, 가로만 변경되게 */
+}
+
+.hd-upper-wrap {
+    height: 30px;
+}
+
+.hd-upper-wrap a:hover {
+    text-decoration: underline;
+}
+
+.hd-upper-left {
+    float: left;
+}
+
+.hd-upper-left li {
+    float: left;
+    margin-right: 16px;
+    /* 각 li 태그 안에 a의 margin*/
+}
+
+.hd-upper-left li a {
+    display: block;
+    letter-spacing: -0.5px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.hd-upper-right {
+    float: right;
+
+}
+
+.hd-upper-right .login-btns {
+    position: relative;
+    float: left;
+    margin-right: 40px;
+}
+
+.hd-upper-right .login-btns ul {
+    display: block;
+    list-style-type: none;
+}
+
+.hd-upper-right .login-btns ul li {
+    float: left;
+}
+
+.hd-upper-right .login-btns ul .login {
+    width: 32px;
+    margin-right: 16px;
+}
+
+.hd-upper-right .login-btns a {
+    display: block;
+    height: 30px;
+    letter-spacing: -.5px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.hd-upper-right .language {
+    position: relative;
+    float: right;
+}
+
+.hd-upper-right .language a {
+    line-height: 30px;
+}
+
+.hd-upper-right .language a img {
+    width: 14px;
+    margin-left: 4px;
+    vertical-align: -4px;
+}
+
+.hd-lower-wrap {
+    position: relative;
+    height: 70px;
+}
+
+.hd-lower-wrap .logo {
+    float: left;
+    display: block;
+    width: 205px;
+    height: auto;
+    margin-right: 195px;
+}
+
+.submenu-wrap {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+
+.submenu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 609px;
+    margin: auto;
+}
+
+.submenu>li {
+    float: left;
+}
+
+.submenu>li>a {
+    display: block;
+    padding: 0 40px;
+    line-height: 70px;
+    font-size: 18px;
+    letter-spacing: -.5px;
+    color: #000;
+}
+
+.btns-right {
+    float: right;
+    height: 70px;
+}
+
+.btns-right>div {
+    float: left;
+    margin: 20px 14px 20px 0;
+}
+
+.chatbot-btn {
+    position: relative;
+}
+
+.btns-right>a {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+/* 구분선 */
+.divider-line-top {
+    border: 0;
+    border-top: 1px solid #009591;
+    background-color: none;
+    margin: 0;
+}
+.divider-line-btm {
+    border: 0;
+    border-top: 1px solid #eee;
+    background-color: none;
+    margin: 0;
+}
+
+/* container */
+#container {
+    float: none;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#container * {
+    box-sizing: border-box;
+    /* 뺄지말지 고민 */
+}
+
+#contents {
+    margin: 0 auto;
+    float: none;
+    width: auto;
+    background: #f4f6f7;
+    /* up to where the apps icon are */
+}
+
+.main-wrap {
+    background: #fafbfb;
+    width: 100%;
+}
+
+.main-inner {
+    position: relative;
+    width: 1150px;
+    height: 440px;
+    margin: 0 auto;
+
+    overflow: visible;
+}
+
+.main-slider {
+    width: 760px;
+    height: 440px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+.slide-content {
+    width: 760px;
+    height: 440px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide-content img {
+    z-index: 1;
+    width: 760px;
+    left: 0;
+    margin-left: 0;
+    display: block;
+}
+
+.text-wrap {
+    position: absolute;
+    display: table;
+    top: 78px;
+    left: 0;
+    margin-left: 0;
+}
+
+.text-content p {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 38px;
+    line-height: 1.26;
+    color: #000;
+    letter-spacing: -.5px;
+}
+
+.text-content i {
+    border: 1px solid #cccdcd;
+    width: 60px;
+    height: 28px;
+    color: #666;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 2px;
+    line-height: 27px;
+    text-align: center;
+    font-style: normal;
+}
+
+.text-content span {
+    font-size: 16px;
+    letter-spacing: -.5px;
+    line-height: normal;
+}
+#detail-btn {
+    margin-top: 40px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    min-width: 98px;
+    line-height: 40px;
+    font-size: 14px;
+    
+}
+
+
+
+/* 조회 이체 퀵 버튼 */
+
+.main-right {
+    padding: 47px 0 0 58px;
+    /* width: 400px; */
+    float: right;
+    height: 372px;
+}
+
+.quick-btns-wrap {
+    height: 120px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.quick-btns-wrap a {
+    position: relative;
+    width: 158px;
+    height: 120px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+}
+
+.quick-btn1 {
+    background-color: #009591;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.quick-btns-wrap a span {
+    position: absolute;
+    left: 24px;
+    bottom: 20px;
+    width: 54px;
+}
+
+.quick-btn2 {
+    background-color: #323850;
+    display: inline-block;
+}
+
+.quick-icons-wrap{
+    width: 332px;
+    text-align: center;
+    padding: 20px 0 0;
+    height: 248px;
+}
+.quick-icons-wrap td {
+    padding: 0;
+} 
+.quick-icons-wrap td a {
+    height: 84px;
+    width: 60px;
+    font-size: 14px;
+    color: #000;
+}
+
+/* middle contents */
+.middle-wrap{
+    width: 100%;
+    background-color: #ecf0f1;
+    height: 160px;
+    margin: 0 auto;
+
+}
+.middle-inner{
+    width: 1150px;
+    text-align: center;
+    margin: auto;
+}
+.middle-inner table {
+    height: 52px;
+    padding: 54px 0;
+}
+.middle-inner td {
+    width: 230px;
+}
+.middle-inner td + td {
+    border-left: 1px solid #dae1e3;
+}
+.middle-inner td b {
+    font-size: 18px;
+    color: #000;
+    letter-spacing: -0.5px;
+    padding-bottom: 3px;
+    line-height: 27px;
+    font-weight: normal;
+}
+.middle-inner td span{
+    line-height: 24px;
+    font-size: 16px;
+}
+
+/* news section */
+.bottom-wrap{
+    width: 100%;
+    background: #fff;
+}
+.bottom-inner{
+    display: table;
+    width: 1150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: visible;
+}
+.news{
+    position: relative;
+    width: 740px;
+    padding-top: 46px;
+    float: left;
+}
+.news h3{
+    font-weight: 540;
+    font-size: 16px;
+    color: #000;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding: 0 0 18px 0;
+    height: auto;
+}
+.news-list {
+    border: 0;
+}
+.news-list li {
+    padding: 0 0 8px;
+    height: 32px;
+    overflow: visible;
+}
+.news-list li > a {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+}
+.news-list li > a > p:first-child {
+    color: #333;
+    font-weight: 525;
+    float: left;
+}
+.news-list li > a > p:last-child{
+    color: #666;
+    float: right;
+}
+
+.news-more-btn {
+    position: relative;
+    font-size: 14px;
+    /* line-height: 20px; */
+    padding-left: 0;
+    top: 49px;
+    position: absolute;
+    right:0;
+}
+
+.bottom-right-btns{
+    padding: 40px 0 0 58px;
+    width: 390px;
+    float: right;
+}
+
+.bottom-right-btns table {
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    width: 100%;
+    height: 150px;
+    border-collapse: collapse;
+    border: 1px solid #eeeeee9b;
+
+    /* 테두리 둥굴게 */
+    border-radius: 10px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #eee;
+}
+
+.bottom-right-btns td {
+    cursor: pointer;
+    height: 49.5px;
+    width: 164.5px;
+}
+.bottom-right-btns td:hover {
+    background-color: #f9f9f9;
+    text-decoration: underline;
+}
+
+/* apps */
+.hana-apps{
+    width: 100%;
+    background: #fff;
+}
+.apps-inner {
+    width: 1150px;
+    height: 158px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.apps-inner table {
+    overflow: visible;
+    margin: 48px auto;
+    height: 70px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.apps-inner table tr {
+    width: 920px;
+    margin: 48px auto;
+}
+.apps-inner table td {
+    width: 70px;
+    height: 70px;
+    padding-right: 100px;
+}
+.apps-inner table td:last-child{
+    padding-right: 0;
+}
+
+/* footer */
+#footer {
+    padding: 36px 0;
+    background-color: #fff;
+    height: 195px;
+}
+.ft-inner {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 1280px;
+    width: 1280px;
+    padding: 0 65px;
+    margin: 0 auto;
+    height: 195px;
+}
+.ft-left {
+    width: 800px;
+    float: left;
+}
+.company {
+    margin-bottom: 44px;
+}
+.company .line1 {
+    margin-bottom: 10px;
+}
+.company ul li {
+    position: relative;
+    float: left;
+    margin-right: 22px;
+}
+.company a {
+    color: #000;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+.fixer::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+.fixer li:last-child{
+    margin: 0;
+}
+.fixer li::after {
+    content: '';
+    background-color: #ccc;
+    position: absolute;
+    top: 9px;
+    right: -12px;
+    width: 2px;
+    height: 2px;
+}
+
+.fixer li:last-child:after{
+    width: 0;
+}
+.certifications {
+    width: 100%;
+    margin-bottom: 24px;
+}
+.certifications table{
+    width: 218px;
+    height: 32px;
+}
+.bottom-btns-wrap table {
+    font-size: 13px;
+    letter-spacing: -.5px;
+    
+    width: 800px;
+    height: 48px;
+    border-collapse: collapse;
+    border: 1px solid #eeeeee9b;
+
+    /* 테두리 둥굴게 */
+    border-radius: 10px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #eee;
+}
+
+.bottom-btns td {
+    cursor: pointer;
+    width: 200px;
+    padding-left: 16px;
+}
+
+.bottom-btns td::after {
+    content: url(https://image.kebhana.com/cont/common/img/newmain2021/icon-20-arrow-top-666.png);
+    position: relative;
+    float: right;
+    margin-right: 16px;
+    width: 20px;
+    height: 20px;
+}
+.bottom-btns td:nth-child(3):after {
+    content: url(https://image.kebhana.com/cont/common/img/newmain2021/icon-arrow.png);
+    position: relative;
+    float: right;
+    margin-right: 16px;
+    width: 20px;
+    height: 20px;
+}
+
+.ft-right{
+    text-align: right;
+    float: right;
+}
+
+.call-center {
+    font-size: 14px;
+    color: #009591;
+}
+.call-nbr {
+    font-size: 24px;
+    color: #333;
+    font-weight: 800;
+    padding-bottom: 12px;
+}
+.slash {
+    color: #ddd;
+    font-size: 24px;
+    font-weight: 500;
+}
+#hana-world {
+    width: 237px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    border: #f3f3f3;
+    font-size: 14px;
+    letter-spacing: -.5px;
+    color: #000;
+    text-align: left;
+    line-height: 48px;
+    cursor: pointer;
+    margin-top: 45px;
+}
+
+#hana-world img {
+    vertical-align: -5px;
+}
+#hana-world img:first-child {
+    margin-left: 26px;
+    margin-right: 4px;
+}
+#hana-world img:last-child{
+    margin-left: 57px;
+}
